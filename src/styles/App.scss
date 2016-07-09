@@ -1,4 +1,6 @@
+@import "variables";
+
 body {
-  font-family: 'Lato', sans-serif;
-  color: #333333;
+  font-family: $font_stack_primary;
+  color: $color_default_text;
 }

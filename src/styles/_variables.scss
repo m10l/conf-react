@@ -1,0 +1,29 @@
+/**
+ * Colours
+ * =======
+ */
+
+// Colour palette
+$color_black : #333333;
+$color_gold  : #c6b266;
+$color_White : #ffffff;
+
+// UI colours
+$color_default_text : $color_black;
+$color_primary      : $color_gold;
+
+/**
+ * Typography
+ * ==========
+ */
+
+// Font stacks
+$font_stack_primary: 'Lato', sans-serif;
+
+// Font weights
+$font_weight_light  : 300;
+$font_weight_normal : 500;
+$font_weight_bold   : 700;
+
+// Letter spacing
+$letter_spacing_wide: 5px;
