@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import PostListFilterComponent from 'components/PostListFilterComponent';
 
 require('styles/PostList.scss');
 
@@ -8,6 +9,7 @@ class PostListComponent extends React.Component {
   render() {
     return (
       <div className="postlist-component">
+        <PostListFilterComponent filterTitles={['Latest', 'Best']} />
         <ul className="postlist-component__list">
           <li>Item 1</li>
           <li>Item 2</li>

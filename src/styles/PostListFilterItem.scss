@@ -1,0 +1,31 @@
+@import "variables";
+
+.postlistfilteritem-component {
+
+  color: $color_primary;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.5;
+  transition: ease 100ms;
+
+  &.is-active {
+    opacity: 1;
+  }
+
+  &__text {
+
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    transition: ease 100ms;
+
+    .is-active & {
+      border-bottom-color: $color_primary;
+    }
+
+  }
+
+}
