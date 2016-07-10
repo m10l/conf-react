@@ -1,0 +1,25 @@
+.audioplayer-component {
+
+  &__play-button {
+
+    float: left;
+    width: 53px;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &__audio {
+    float: left;
+    width: 387px;
+    height: 53px;
+  }
+
+}
