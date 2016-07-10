@@ -49,7 +49,7 @@ class PostComponent extends React.Component {
                 progressColor: '#c6b266',
                 cursorWidth: 0,
                 waveColor: '#eeeeee',
-                height: '53'
+                height: 53
               }
             }
           />
