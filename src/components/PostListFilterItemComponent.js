@@ -8,7 +8,7 @@ let PostListFilterItemComponent = (props) => (
   <a
     href="#"
     onClick={props.onClick}
-    className={props.active? 'postlistfilteritem-component is-active' : 'postlistfilteritem-component'}
+    className={"postlistfilteritem-component" + (props.active? ' is-active' : '')}
   >
     <span className="postlistfilteritem-component__text">
       {props.title}

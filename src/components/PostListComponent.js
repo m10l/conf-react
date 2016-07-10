@@ -9,7 +9,7 @@ class PostListComponent extends React.Component {
   render() {
     return (
       <div className="postlist-component">
-        <PostListFilterComponent filterTitles={['Latest', 'Best']} />
+        <PostListFilterComponent filterTitles={['Latest', 'Best', 'Worst']} />
         <ul className="postlist-component__list">
           <li>Item 1</li>
           <li>Item 2</li>
