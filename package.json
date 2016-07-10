@@ -64,6 +64,7 @@
     "node-sass": "^3.4.2"
   },
   "dependencies": {
+    "axios": "^0.12.0",
     "core-js": "^2.0.0",
     "lodash": "^4.13.1",
     "moment": "^2.14.1",
