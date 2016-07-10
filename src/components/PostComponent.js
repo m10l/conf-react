@@ -1,8 +1,8 @@
 'use strict';
 
 import React from 'react';
-import Moment from 'moment';
 import Wavesurfer from 'react-wavesurfer';
+import DateComponent from 'components/DateComponent';
 
 require('styles/Post.scss');
 
@@ -55,7 +55,7 @@ class PostComponent extends React.Component {
           />
         </div>
         <div className="post-component__meta">
-          Posted { Moment(this.props.date).fromNow() }
+          <DateComponent date={this.props.date} />
         </div>
       </li>
     );
