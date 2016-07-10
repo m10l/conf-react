@@ -1,0 +1,42 @@
+@import "variables";
+
+.post-component {
+
+  float: left;
+  width: 100%;
+  margin: 50px 0;
+
+  &__play-button {
+
+    float: left;
+    width: 53px;
+    margin-right: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  &__audio {
+    float: left;
+    width: 387px;
+    height: 53px;
+  }
+
+  &__meta {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: $font_weight_bold;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #eee;
+  }
+
+}
