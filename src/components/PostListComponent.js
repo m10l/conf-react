@@ -14,7 +14,7 @@ class PostListComponent extends React.Component {
   }
 
   loadAjax() {
-    Axios.get('http://only-god-forgives.herokuapp.com/api/all')
+    Axios.get('https://only-god-forgives.herokuapp.com/api/all')
       .then( (response) =>
         this.setState({confessions: response.data})
       )
