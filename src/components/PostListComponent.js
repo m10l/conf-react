@@ -1,28 +1,31 @@
 'use strict';
 
 import React from 'react';
-import Axios from 'axios';
+
 import PostListFilterComponent from 'components/PostListFilterComponent';
 import PostComponent from 'components/PostComponent';
 
+var ConfessionStore = require('../stores/ConfessionStore');
+var ConfessionActions = require('../actions/ConfessionActions');
 require('styles/PostList.scss');
 
 class PostListComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { confessions: [] };
-  }
-
-  loadAjax() {
-    Axios.get('https://only-god-forgives.herokuapp.com/api/all')
-      .then( (response) =>
-        this.setState({confessions: response.data})
-      )
+  constructor() {
+    super();
+    this.state = ConfessionStore.getState();
   }
 
   componentDidMount() {
-    this.loadAjax();
-    setInterval(this.loadAjax.bind(this), 2000);
+    ConfessionStore.listen(this.onChange.bind(this));
+    ConfessionActions.fetchConfessions();
+  }
+
+  componentWillUnmount() {
+    ConfessionStore.unlisten(this.onChange.bind(this));
+  }
+
+  onChange(state) {
+    this.setState(state);
   }
 
   render() {
